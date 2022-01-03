@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<script src="script.js"
@@ -7,19 +6,20 @@ type="text/javascript"></script>
 <body>
 	<h2>Feedback for the ART OF LIVING session</h2><br>
 	<label for="feedback">Enter the Feedback:</label>
-	<input type="text" id="feebdack" name="feedback" height="40"><br>
+	<input type="text" id="feedback" name="feedback" height="40"/><br>
 
 	<button type="button"
 	id="create"
 	onclick="addFeedback()">Add Feedback</button><br>
+  
 	<button type="button"
 	id="view"
-	onclick="idsplayFeedback()"> view
+	onclick="displayFeedback()"> view
 	Feedback </button><br>
-
-	<div id="result" name="inner">Feedback Details<br>
-		<text 
-		name="inner">Successfully Added Feedback Details!</text>
-	</div>
-</body>
+  
+  <div id="css">
+    <h3>Feedback Details</h3>
+    <div id="result"></div>
+  </div>
+  </body>
 </html>
